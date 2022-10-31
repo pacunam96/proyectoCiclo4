@@ -3,8 +3,7 @@ import ComponenteInicio from './components/ComponenteInicio'
 
 const App = () => {
     const greeting = {
-        hello: "¿Cómo funciona?",
-        subText: "Soy el hijo de Class Component"
+        hello: "¿Cómo funciona?"
     }
     return <ComponenteInicio />
 }
