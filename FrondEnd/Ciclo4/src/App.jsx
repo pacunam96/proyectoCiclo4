@@ -11,11 +11,11 @@ const App = () => {
 
     const handleSubmitRegister = (e, value) => {
         e.preventDefault();
-        //console.log(value);
-        
+        console.log(value);
+        /*
         if(value !==null){
             setComponent(<LogIn logIn={handleSubmitLogIn}/>)
-        }
+        }*/
 
     }
 
