@@ -7,10 +7,6 @@ const ComponenteInicio = () => {
         <button>Sobre nosotros</button>
         <button>Contáctenos</button>
 
-        <button>Log In</button>
-        <button>Regístrate</button>
-        <button>¿Cómo funciona?</button>
-
         <h1>¿Quieres vender?</h1>
         <p>Publica tu oferta</p>
         <p>Obten el mejor precio</p>
