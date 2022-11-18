@@ -47,6 +47,7 @@ export const ButtonContainer = styled.div`
     display: flex;
     justify-content: space-between;
     gap: 10px;
+    
 `
 
 export const Button = styled.button`  
@@ -90,4 +91,7 @@ export const Title = styled.h1 `
     font-size: 30px;
     color: #6F8A4F;
 `
-
+export const Header = styled.h1 `
+    font-size: 30px;
+    color: #6F8A4F;
+`

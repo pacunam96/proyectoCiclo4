@@ -16,10 +16,11 @@ const Register = ({register})=> {
   return (
     <div>
         <ParentComponent>
-            <Title>
+            <Title className="Tit_Ingreso">
                 Registrarse
             </Title>
-            <Form onSubmit={(e)=>register(e, registerInfo)}>
+            <div style={{ backgroundImage: "url(/imagen.png)", width:400, height:500, opacity:0.5, backgroundRepeat: 'no-repeat'}}>
+            <Form onSubmit={(e)=>register(e, registerInfo)} >
                 <Input placeholder='Nombre o razón social' onChange={(e)=> setRegisterInfo({...registerInfo,nombre : e.target.value})}/>
                 <Input placeholder='E-mail' onChange={(e)=> setRegisterInfo({...registerInfo,email : e.target.value})}/>
                 <Input placeholder='Dirección' onChange={(e)=> setRegisterInfo({...registerInfo,direccion : e.target.value})}/>
@@ -32,6 +33,8 @@ const Register = ({register})=> {
                     <Button btnType="Ingresar" type='submit'>Registrar</Button>
                 </ButtonContainer>
             </Form>
+            </div>
+
         </ParentComponent>
     </div>
   )

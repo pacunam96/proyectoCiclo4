@@ -3,6 +3,7 @@ import ComponenteInicio from './components/ComponenteInicio.jsx'
 import LogIn from './LogIn/LogIn'
 import Register from './Register/Register'
 import LogInSuccesful from './LogIn/LogInSuccesful'
+import { Fragment } from 'react'
 
 const App = () => {
 
@@ -34,12 +35,15 @@ const App = () => {
     }
 
     return (
-    <div>
+    <>
+        <header>
+            <button onClick={() => handleClick ("Register")}>Registrarse</button>
+            <button onClick={() => handleClick ("LogIn")}>Ingresar</button>
+        </header>
+        <h1>Venta Reciclaje <hr/></h1>
         {component}
-
-        <button onClick={() => handleClick ("Register")}>Registrarse</button>
-        <button onClick={() => handleClick ("LogIn")}>Ingresar</button>
-    </div>)
+    </>
+    )
     
 }
 
